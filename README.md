@@ -48,3 +48,13 @@ Project requirements are listed below:
         Collections this could be arrays
         Function / call back
         Events
+Additional resources :
+Photos: https://www.pexels.com/search/template/
+Text: https://www.lipsum.com/
+GIFs: https://www.motionelements.com/stock-image-10116013-business-and-startup-4k/ (Links to an external site.)
+Useful API sites:
+
+https://rapidapi.com/
+https://any-api.com/
+https://github.com/toddmotto/public-apis#public-apis-
+https://apilist.fun/
