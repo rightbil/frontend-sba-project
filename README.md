@@ -1,7 +1,8 @@
 # frontend-sba-project
-# Student Name : Bili Gebru    Date: last week of June ,2022
-# Frontend SBA project was developed for the part of the frontend for the Java fullstack programming offered by per scholas.
-# Project requirements are listed below:
+# Student Name : Bili Gebru    Date: last week of June ,2022 Instructor : Mr Raheem 
+Frontend SBA project was developed for the part of the frontend for the Java fullstack programming offered by per scholas.
+Note : This website is just basic hence ; it needs proper testing and utilization of advanced Javascript.
+Project requirements are listed below:
 
 ########.   Requirements #######
         HTML
