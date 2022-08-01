@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="refresh" content="4"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form </title>
+        <!-- css bootstrap link -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <!-- css external link  -->
+        <link rel="stylesheet" href="../css/register.css" />
+
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+
+        <div class="wrapper">
+
+            <span id="message-area" name="message"></span>
+
+            <form class="form-settings grid-item js-focusin" id="register"
+                name="register">
+                <!-- first name  -->
+
+                <label for="fristname" class="grid-label">First Name </label>
+                <input type="text" name="firstname" id="firstname"
+                    class="form-control-sm "
+                    placeholder="Frist Name" required
+                    minlength="1" maxlength="20" autocomplete="off" autocapitalize="word"/>
+
+                <!-- last name  -->
+
+                <label for="lastname" class="grid-label">Last Name</label>
+                <input type="text" id="lastname" name='lastname'
+                    placeholder="Last Name"
+                    minlength="1" maxlength="20" required autocomplete="off">
+
+                <!-- telephone -->
+
+                <label for="tel" id="tele" class="grid-label">Phone Number
+                </label>
+                <input type="tel" id="phone" name="telephone" required
+                    placeholder="Phone number" autocomplete="off">
+
+                <!--DOB -->
+
+                <label for="birthdate" class="grid-label">Birth of Date</label>
+                <input type="date" id="birthdate" name="birthdate" required/>
+                <!-- Location -->
+
+                <label for="location" class="grid-label">Location</label>
+                <select id="location" required>
+                    <option value="none" selected disabled hidden> Select
+                        Location </option>
+                    <optgroup label="East Coast">
+                        <option value="charlotte">Charlotte</option>
+                        <option value="dmv area">DMV Area</option>
+                    </optgroup>
+                    <optgroup label="West Coast">
+                        <option value="seattle">Seattle</option>
+                        <option value="portland">Portland</option>
+                    </optgroup>
+                    <optgroup label="Mid West">
+                        <option value="denver"> Denver </option>
+                    </optgroup>
+                    <option value="mexico"> Mexico </option>
+                    <option value="canada"> Canada </option>
+                </select>
+
+                <!-- Major -->
+
+                <legend class="grid-label">Major: </legend>
+                <fieldset>
+                    <input type="checkbox" id="backend" name="interest"
+                        value="backend">
+                    <label for="backend">Backend</label>
+                    <input type="checkbox" id="frontend" name="interest"
+                        value="frontend">
+                    <label for="frontend" style="content: xx ">Frontend</label>
+                    <input type="checkbox" id="both" name="interest"
+                        value="both"></input>
+                <label for="both" id="format-chkbox">Full Stack</label>
+            </fieldset>
+
+      
+
+            <!-- Delivery  -->
+
+            <legend class="grid-label">Delivery Mode :</legend>
+            <fieldset>
+
+                <input type="radio" id="remote" name="mode"
+                    value="Remote">
+                <label for="remote">Remote</label>
+                <input type="radio" id="onsite" name="mode"
+                    value="On Site" checked>
+                <label for="onsite">On Site</label>
+                <input type="radio" id="hybrid" name="mode"
+                    value="Hybrid">
+                <label for="hybrid" id="format-option">Hybrid</label>
+            </fieldset>
+
+            <!-- file upload  -->
+
+            <label for="fileupload" id="updloadfile" class="grid-label"> Upload
+                ID</label>
+            <input type="file" id="fileupload">
+            
+            <!-- Email  -->
+
+            <label for="email" class="grid-label"> Email Address</label>
+            <input type="email" id="email" name="email"
+                minlength="5" maxlength="40" required autocomplete="off">
+
+
+            <label for="Password" class="grid-label">Password</label>
+
+            <input type="Password" id="password" name="password"
+                placeholder="Password"  autocomplete="off"/>
+
+
+            <label for="confirmpassword" class="grid-label">Confirm Password</label>
+            <input type="Password" id="confirmpassword"
+                name="confirmpassword" placeholder="Confirm Password"  autocomplete="off"/>
+            <br/>
+            </div>
+            <!-- buttons  -->
+            <div class="button-position">
+                <button id="submit" type="submit" >Submit</button>
+                <input type="reset" id="reset" value="Reset">
+            </div>
+            <div id="demo"></div>
+        </form>
+        <!-- End of form  -->
+
+        <!-- JQuery link -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <!-- external Javascript link  -->
+        <script src="../Js/register.js"></script>
+    </body>
+</html>

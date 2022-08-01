@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <!-- css bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- external style  -->
+  <link rel="stylesheet" href="../css/login.css" />
+  <!-- internal style  overriding font-size  -->
+  <style>
+    a {
+      color: rgb(83, 83, 135);
+      font-size: xx-large;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div id="profilepic">
+      <img src="../imgs/biligebru.jpeg" alt="profile picture" class="flex-items">
+    </div>
+    <form id="form" class="flex-items" action="home.html">
+      <h3>Login</h3>
+      <input type="text" id="email" name="email" placeholder="email@domain.com" autocomplete="off" autocorrect="off" autocapitalize="none"/>
+      <br /> <br>
+      <input id="password" type="password" name="password" placeholder="*********" autocomplete="off" />
+      <br />
+      <br />
+      <input type="checkbox" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1"> Remember me
+      </label>
+      <input id="submit" type="submit" class="btn btn-secondary"> </input>
+      <!-- override font-size  -->
+      <h6>New User? <a href="register.html" style="font-size: large;" }>Register
+          here</a></h6>
+    </form>
+    <script src="../Js/login.js"></script>
+  </div>
+</body>
+
+</html>

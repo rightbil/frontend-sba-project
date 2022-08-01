@@ -1,0 +1,51 @@
+body {
+  background-color: #5585b5; 
+  background-image: url("../imgs/newyorkcity.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  margin:10px;
+}
+
+a {
+  background: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* will be overriden in inline in html */
+  font-size:xx-small;
+
+}
+.flex-container {
+  border-radius: 5%;
+  /* height: 400px; */
+  margin-top:200px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #53a8b6; 
+  border: solid 2px #79c2d0; 
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+}
+/* prile image radius  */
+img{
+  border: solid 5px #5585b5;
+  height:100px;
+  border-radius: 50%;
+  width: 100px;;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .flex-container {
+    background-color: rgb(129, 129, 166);
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+ .flex-container {
+    background-color: rgb(218, 218, 203);
+  }
+}

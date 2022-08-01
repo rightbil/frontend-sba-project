@@ -1,0 +1,86 @@
+body {
+
+    /* background-image: url(""); */
+    margin: 10px;
+    background-color: #5585b5; 
+    background-image: url("../imgs/newyorkcity.jpg");
+    opacity: 0.8;
+}
+
+/* layout  */
+.wrapper{
+display: grid;
+justify-content: center;
+margin-top: 10px;
+padding-top: 10px;
+border-top: solid 0.5px green;
+
+}
+/* use flex for buttons  */
+.button-position{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        margin-left: 20px;
+        display: flex;     
+        position: fixed;
+        position: relative;
+    }
+
+/* form control layouts  */
+.form-settings {
+    display:grid; 
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+
+    background: #53a8b6; 
+    border: solid 2px #79c2d0; 
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  
+}
+/* additional settings with in the form */
+/* error and success messages  */
+
+#message-area{
+    display: none;
+    }
+
+/* legend */
+legend{
+        font-size: medium;
+    }
+.form-settings label:before {
+     content: ""; 
+    } 
+.form-settings label::after { 
+    content: ":"; 
+} 
+
+#format-chkbox::after{
+    content: "";
+}
+#format-option::after{
+    content: "";
+}
+/* pointer for input selected  */
+textarea, select, input,button[type=submit] {
+    cursor:progress;
+}
+ 
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .form-settings {
+      background-color: rgb(129, 129, 166);
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+   .form-settings {
+      background-color: rgb(218, 218, 203);
+    }
+  }
