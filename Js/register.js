@@ -74,7 +74,7 @@ txtConfirmPassword.addEventListener("keyup", (e) => {
 // e) stores user profile to local Storage
 
 btnSubmit.addEventListener("click", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   const userEmail = document.getElementById("email").value.trim();
   const userPassword = document.getElementById("password").value.trim();
 
@@ -122,8 +122,9 @@ function validationErrorMessage(selectedField) {
 
 function validationSuccessMessages(selectedField) {
   spnMessage.style.display = "block";
-  spnMessage.style.color = "black";
+  spnMessage.style.color = "white";
   if (selectedField.name === "password")
+  // we should hide password 
     spnMessage.innerText = "Password is correct format";
   else
     spnMessage.innerText =
@@ -142,34 +143,7 @@ function confirmPasswordError() {
 
 function confirmPasswordSuccess() {
   spnMessage.style.display = "block";
-  spnMessage.style.color = "black";
+  spnMessage.style.color = "white";
   spnMessage.innerText = "Password matched";
 }
 
-
-// TODO -- this is to be solved to disable the submit button till all fileds have value  
-
-// (function(){
-// const controlSubmit = document.querySelectorAll("input");
-// let empty = false;
-// controlSubmit.forEach(element => {
-
-//   element.addEventListener('keyup', e => {
-
-//    // console.log("before test : " + element.value);
-//     if (e.target.value == "") {
-//       console.log(e.target.value + " & " + element.value);
-//       //console.log(document.getElementById('submit').disabled);
-//       empty = true;
-//     }
-//   });
-
-//   if (empty) {
-//     document.getElementById('submit').disabled = true;
-//     console.log(document.getElementById('submit').disabled);
-//   } else {
-//     document.getElementById('submit').disabled = false;
-//     console.log("Enabled: " + document.getElementById('submit').disabled);
-//   }
-// });
-// })();

@@ -46,6 +46,8 @@ border-top: solid 0.5px green;
 
 #message-area{
     display: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
     }
 
 /* legend */
@@ -73,7 +75,7 @@ textarea, select, input,button[type=submit] {
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
-    .form-settings {
+    .form-settings ,#navbarSupportedContent{
       background-color: rgb(129, 129, 166);
     }
   }

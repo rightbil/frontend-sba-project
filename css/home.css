@@ -85,7 +85,7 @@ article > section {
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
-    .wrapper {
+    .wrapper ,#navbarSupportedContent{
       background-color: rgb(129, 129, 166);
     }
   }
